@@ -1,0 +1,44 @@
+
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Logs
+logs/
+*.log
+*.out
+*.pid
+
+# dotenv env file
+.env
+.env.*.local
+
+# Build output
+dist/
+build/
+coverage/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# VS Code
+.vscode/
+
+# Docker
+docker-compose.override.yml
+docker-volume/
+*.local
+
+# MongoDB dump files (if any)
+dump/
+*.gz
+
+# Swagger editor (if exported)
+swagger-output.json
+
+# Misc
+.idea/
+*.sublime-workspace
+*.sublime-project
