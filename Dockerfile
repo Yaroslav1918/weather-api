@@ -17,5 +17,5 @@ COPY . .
 EXPOSE 3000
 
 # Run the app
-CMD ["./start.sh"]
+CMD ["/bin/sh", "./start.sh"]
 
