@@ -1,12 +1,12 @@
 // In this file you can configure migrate-mongo
 
-const config = {
+ const config = {
   mongodb: {
     // TODO Change (or review) the url to your MongoDB:
     url: process.env.MONGO_URI,
 
     // TODO Change this to your database name:
-    databaseName: process.env.MONGO_Database,
+    databaseName: process.env.MONGO_DATABASE,
 
     options: {
       useNewUrlParser: true, // removes a deprecation warning when connecting
@@ -36,7 +36,7 @@ const config = {
   useFileHash: false,
 
   // Don't change this, unless you know what you're doing
-  moduleSystem: "commonjs",
+  moduleSystem: "esm",
 };
 
-module.exports = config;
+export default config;
