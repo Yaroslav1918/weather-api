@@ -90,13 +90,13 @@ This is a simple Node.js service that allows users to subscribe to regular weath
 ## 🐳 Run with Docker
 
 1. Create a `.env` file with:
-MONGO_URI=mongodb://mongo:27017/weather
-MONGO_DATABASE=weather
-WEATHER_API_KEY=your_weather_api_key
-SMTP_USER=your_gmail_user
-SMTP_PASS=your_gmail_password
-BASE_URL=http://localhost:3000
-TOKEN_SECRET= your_secret_password
+- MONGO_URI=mongodb://mongo:27017/weather
+- MONGO_DATABASE=weather
+- WEATHER_API_KEY=your_weather_api_key
+- SMTP_USER=your_gmail_user
+- SMTP_PASS=your_gmail_password
+- BASE_URL=http://localhost:3000
+- TOKEN_SECRET= your_secret_password
 
 2. Then run:
 
