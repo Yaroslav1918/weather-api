@@ -1,5 +1,4 @@
 import "dotenv/config";
-
 const config = {
   mongodb: {
     // TODO Change (or review) the url to your MongoDB:
