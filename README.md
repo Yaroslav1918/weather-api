@@ -59,21 +59,6 @@ This is a simple Node.js service that allows users to subscribe to regular weath
 
 ---
 
-## 🗂️ Folder Structure
-weather/
-├── src/
-│ ├── controllers/ # Route logic
-│ ├── models/ # Mongoose schema
-│ ├── services/ # Main logic for subscriptions
-│ ├── routes/ # Route setup
-│ └── utils/ # Helpers: email, config, tokens
-├── migrations/ # DB migrations using migrate-mongo
-├── migrate-mongo-config.js
-├── Dockerfile
-├── docker-compose.yml
-└── README.md
-
-
 ---
 
 ## 🚀 How it Works
