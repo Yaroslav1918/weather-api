@@ -17,4 +17,5 @@ COPY . .
 EXPOSE 3000
 
 # Run the app
-CMD ["node", "src/app.js"]
+CMD ["./start.sh"]
+

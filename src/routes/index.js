@@ -1,4 +1,5 @@
 import express from "express";
+
 import { getWeather } from "../controllers/weatherController.js";
 import { subscribe } from "../controllers/subscribeController.js";
 import { confirm } from "../controllers/confirmController.js";

@@ -1,15 +1,17 @@
 import nodemailer from "nodemailer";
 
+import { baseUrl, smtpPass, smtpUser } from "./config.js";
+
 const transporter = nodemailer.createTransport({
   service: "gmail",
   auth: {
-    user: process.env.SMTP_USER,
-    pass: process.env.SMTP_PASS,
+    user: smtpUser,
+    pass: smtpPass,
   },
 });
 
 export const sendConfirmationEmail = async (email, token) => {
-  const url = `${process.env.BASE_URL}/api/confirm/${token}`;
+  const url = `${baseUrl}/confirm/${token}`;
 
   await transporter.sendMail({
     from: process.env.SMTP_USER,

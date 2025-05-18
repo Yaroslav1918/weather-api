@@ -1,11 +1,10 @@
 import axios from "axios";
 
-export const getWeatherByCity = async (city) => {
-  const apiKey = process.env.WEATHER_API_KEY;
-  const url = `http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${city}`;
+import { weatherUrl } from "../utils/config.js";
 
+export const getWeatherByCity = async (city) => {
   try {
-    const response = await axios.get(url);
+    const response = await axios.get(`${weatherUrl}&q=${city}`);
     const { temp_c, humidity, condition } = response.data.current;
 
     return {
