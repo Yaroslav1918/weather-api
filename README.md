@@ -11,34 +11,6 @@ This is a simple Node.js service that allows users to subscribe to regular weath
 
 - **Subscribe** with email, city, and update frequency (`hourly` or `daily`)
 - **Confirm** your subscription via email
-- **Unsubscribe** anytime using the confirmation link
-- **Get current weather** data for any city
-- Emails are sent using Gmail SMTP
-- MongoDB stores all subscriptions
-- Migrations handled using `migrate-mongo`
-- Fully Dockerized (Docker + Docker Compose)
-
----
-
-## 🔧 Tech Stack
-
-- Node.js + Express
-- MongoDB + Mongoose
-- Axios for weather API requests
-- JWT for secure email links
-- Nodemailer for sending emails
-- Docker for containerization
-
----
-
-# 🌤️ Weather Subscription Service
-
-This is a simple Node.js service that allows users to subscribe to regular weather updates for a selected city.
-
-## 📦 Features
-
-- **Subscribe** with email, city, and update frequency (`hourly` or `daily`)
-- **Confirm** your subscription via email
 - **Unsubscribe** anytime using the token from email
 - **Get current weather** data for any city
 - Emails are sent using Gmail SMTP
@@ -56,8 +28,6 @@ This is a simple Node.js service that allows users to subscribe to regular weath
 - JWT for secure email links
 - Nodemailer for sending emails
 - Docker for containerization
-
----
 
 ---
 
@@ -82,7 +52,7 @@ This is a simple Node.js service that allows users to subscribe to regular weath
 - `GET /unsubscribe/:token`  
   → Cancel a subscription via token
 
-- `GET /weather?city=Kyiv`  
+- `GET /weather?city=cityName`  
   → Get current weather for a city
 
 ---
